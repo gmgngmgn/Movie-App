@@ -1,0 +1,234 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 350px;
+    border: 1px solid black;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('photos/hero-pic.jpg');
+    background-size: cover;
+    background-position: 50% 20%;
+    min-height: 150px; 
+    position: relative;
+}
+
+.header-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    margin-top: -20px;
+    z-index: 1;
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.form-container {
+    margin-top: -20px;
+    z-index: 1;
+    width: 420px;
+    height: 40px;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+}
+
+.title {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 43px;
+    padding-left: 42px;
+}
+
+.header-btn {
+    border: none;
+    background: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    padding-right: 45px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#movie-input {
+    height: auto;
+    width: auto;
+    flex: 3;
+    border: none;
+    color: #6B7280;
+    font-weight: medium;
+    font-size: 14px;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+}
+
+#movie-input::placeholder {
+    background-image: url('photos/Search.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#submit-btn {
+    height: auto; 
+    width: auto; 
+    flex: 1;
+    border: none;
+    background: #F9FAFB;
+    color: #374151;
+    font-size: 14px;
+    border: 1px solid #D1D5DB;
+    border-radius: 0 5px 5px 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 550px;
+}
+
+.start-exploring-placeholder {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movies-list {
+    margin-top: 40px;
+}
+
+#film-icon {
+    width: 70px;
+}
+
+.empty-section-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #DFDDDD;
+    margin-top: 10px;
+}
+
+.movie-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0px 44px 20px 44px;
+    border-bottom: 1.5px solid #E5E7EB;
+    max-width: 700px;
+    min-height: 150px;
+    max-height: 200px;
+    padding-bottom: 20px;
+    color: #111827;
+}
+
+#poster {
+    grid-column: 1 / span 1; 
+    grid-row: 1 / span 3; 
+    width: 100px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.title-container {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    display: flex;
+    align-items: center;
+}
+
+#movie-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-right: 8px;
+}
+
+#star-icon {
+    width: 15px;
+    height: 15px; 
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+#rating {
+    font-size: 12px;
+}
+
+#info-container {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 1;
+    display: flex;
+    align-items: center;
+}
+
+#runtime {
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+#genre {
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    border: none;
+    background: none;
+}
+
+.add-btn:hover {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#add-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+#plot {
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 1;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+#return-to-search-btn {
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#return-to-search-btn:hover {
+    font-weight: 900;
+}
+
+#go-to-watchlist-btn:hover {
+        font-weight: 900;
+}
